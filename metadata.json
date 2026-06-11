@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Remix: Remix: Vasuki",
+  "description": "Add an interactive \"Live Agent Telemetry \u0026 Log Console\" component to the interface.\n\nRequirements:\n1. Position: Place it as a terminal-like panel spanning the bottom of the center \"CURRENT EXECUTION FRAME\" column.\n2. Styling: Give it a strict monochromatic dark glassmorphism look (slightly darker background than #050505, thin subtle borders) with a font-mono text layout.\n3. Content \u0026 Activity Indicators: \n   - Add a top status header row showing the status of our core daemons with colored glowing dot pulses:\n     * AppTracker: Active (Emerald glow)\n     * Ollama (Hermes): Thinking... (Amber/Yellow glow)\n     * Memory AGI: Idle (Muted grey)\n4. Mock Stream Log Data: Populate the terminal box with a few scrolling, structured JSON-like lines simulating real system activity, such as:\n   - [19:38:02] [AppTracker] FOCUS_CHANGED -\u003e VS Code (vasuki_workspace)\n   - [19:38:05] [Ollama_Agent] POST /api/generate context block transmitted\n   - [19:38:06] [Memory_Agent] SQLite Ledger synchronized successfully.\n5. Code Setup: Implement a simple Next.js API mock fetch structure (using useEffect/useState) so that these scrolling logs update dynamically on an interval, allowing us to easily hook it up to our local FastAPI python backend server later.\n",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
